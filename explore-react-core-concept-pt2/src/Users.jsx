@@ -21,6 +21,6 @@ export default function Users(){
 1. Declare a state to hold the data
 2.useEffect with callback and dependency array
 3. use fetch to load data
-
+4. set loaded to data to a state
 
 */
