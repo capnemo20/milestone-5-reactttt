@@ -1,0 +1,16 @@
+.country{
+    margin: 10px;
+    padding: 10px;
+    border: 2px solid rgb(80, 192, 240);
+    border-radius: 10px;
+}
+
+.flags{
+    height: 70px;
+    width: 150px;
+}
+.country-btn{
+    border: 1px solid rgb(70, 43, 225);
+    background-color: rgb(102, 193, 120);
+    
+}

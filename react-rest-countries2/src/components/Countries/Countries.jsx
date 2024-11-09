@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import Country from "../Country/Country";
 import "./Countries.css";
-// import { list } from "tar";
+import { list } from "tar";
 
 const Countries = () => {
   const [countries, setCountries] = useState([]);
@@ -25,11 +25,11 @@ const Countries = () => {
       <h3>Countries: {countries.length}</h3>
       <div>
         <h4>Visited Countries: {visitedCountries.length}</h4>
-        <ul>
-          {visitedCountries.map((country) => (
-            <li key={country.cca3}>{country.name.common}</li>
-          ))}
-        </ul>
+        {/* <ul> */}
+            {/* {
+                visitedCountries.map(country=> <li key={country.cca3}>{country.name.common}</li>)
+            } */}
+        {/* </ul> */}
       </div>
       <div className="country-container">
         {countries.map((country) => (
