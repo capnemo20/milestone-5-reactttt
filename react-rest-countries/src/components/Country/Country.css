@@ -9,3 +9,8 @@
     height: 70px;
     width: 150px;
 }
+.country-btn{
+    border: 1px solid rgb(70, 43, 225);
+    background-color: rgb(102, 193, 120);
+    
+}
