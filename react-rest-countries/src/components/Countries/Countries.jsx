@@ -10,12 +10,25 @@ const Countries = () => {
       .then((res) => res.json())
       .then((data) => setCountries(data));
   }, []);
+
+  const handleVisitedCountries = country =>{
+    console.log("add this to your visited countries");
+    console.log(counrty);
+
+  }
+
   return (
-    <div >
+    <div>
       <h3>Countries: {countries.length}</h3>
+      <div>
+        <h4>Visited Countries</h4>
+        <ul>
+
+        </ul>
+      </div>
       <div className="country-container">
         {countries.map((country) => (
-          <Country country={country} key={country.cca3}></Country>
+          <Country country={country} key={country.cca3} handleVisitedCountries={handleVisitedCountries}></Country>
         ))}
       </div>
     </div>
