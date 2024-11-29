@@ -39,11 +39,17 @@ const Bottles = () => {
     addToLS(bottle.id);
   };
 
+  const handleRemoveFromCart = id =>{
+    //remove from visual cart
+    //remove from LS
+
+  }
+
   return (
     <div>
       <h2>Bottles Available: {bottles.length}</h2>
      
-      <Cart cart={cart}></Cart>
+      <Cart cart={cart} handleRemoveFromCart={handleRemoveFromCart}></Cart>
       <div className="bottle-container">
         {bottles.map((bottle) => (
           <Bottle
