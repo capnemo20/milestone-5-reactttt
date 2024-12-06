@@ -1,52 +1,43 @@
 [
   {
     "id": 1,
-    "cover": "https://example.com/images/cover1.jpg",
-    "title": "The Journey to Beyond",
+    "cover": "../src/assets/images/1.jpg",
+    "title": "Top 10 ES6 Feature You Must Know",
     "author": "Ava Harper",
-    "author_img": "https://example.com/images/author1.jpg",
+    "author_img": "../src/assets/images/boy1.png",
     "posted_date": "2024-12-01",
     "reading_time": "5 min",
     "hashtags": ["#adventure", "#fiction", "#writing"]
   },
   {
     "id": 2,
-    "cover": "https://example.com/images/cover2.jpg",
-    "title": "Cooking Made Simple",
+    "cover": "../src/assets/images/2.png",
+    "title": "JS Object For Beginners",
     "author": "Liam Brooks",
-    "author_img": "https://example.com/images/author2.jpg",
+    "author_img": "../src/assets/images/boy2.png",
     "posted_date": "2024-12-03",
     "reading_time": "8 min",
     "hashtags": ["#cooking", "#recipes", "#food"]
   },
   {
     "id": 3,
-    "cover": "https://example.com/images/cover3.jpg",
-    "title": "Mastering Productivity",
+    "cover": "../src/assets/images/3.png",
+    "title": "Component Lifecycle in React",
     "author": "Sophia Adams",
-    "author_img": "https://example.com/images/author3.jpg",
+    "author_img": "../src/assets/images/girl1.jpg",
     "posted_date": "2024-12-04",
     "reading_time": "7 min",
     "hashtags": ["#productivity", "#selfimprovement", "#lifestyle"]
   },
   {
     "id": 4,
-    "cover": "https://example.com/images/cover4.jpg",
-    "title": "Exploring the Cosmos",
+    "cover": "../src/assets/images/4.jpg",
+    "title": "Free Images and Collection for Website",
     "author": "Ethan Clarke",
-    "author_img": "https://example.com/images/author4.jpg",
+    "author_img": "../src/assets/images/girl2.jpg",
     "posted_date": "2024-12-02",
     "reading_time": "6 min",
     "hashtags": ["#science", "#space", "#cosmos"]
-  },
-  {
-    "id": 5,
-    "cover": "https://example.com/images/cover5.jpg",
-    "title": "A Guide to Minimalism",
-    "author": "Mia Bennett",
-    "author_img": "https://example.com/images/author5.jpg",
-    "posted_date": "2024-12-05",
-    "reading_time": "10 min",
-    "hashtags": ["#minimalism", "#lifestyle", "#design"]
   }
+  
 ]
