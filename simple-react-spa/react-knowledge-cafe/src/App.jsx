@@ -8,22 +8,30 @@ function App() {
   const [bookmarks, setBookmarks] = useState([]);
   const [readingTime, setReadingTime] = useState(0);
 
-  const handleAddToBookmark = blog=>{
+  const handleAddToBookmark = (blog) => {
     const newBookmarks = [...bookmarks, blog];
     setBookmarks(newBookmarks);
-  }
+  };
 
-  const handleMarkAsRead = time =>{
-    
-    const newReadingTime = readingTime+parseInt(time);
+  const handleMarkAsRead = (id, time) => {
+    const newReadingTime = parseInt(readingTime) + parseInt(time);
     setReadingTime(newReadingTime);
-  }
+    //remove the read blog from the bookmarks
+    // console.log("remove bookmark", id);
+    const remainingBookmarks = bookmarks.filter(
+      (bookmark) => bookmark.id !== id
+    );
+    setBookmarks(remainingBookmarks);
+  };
 
   return (
     <>
       <Header></Header>
       <div className="md:flex max-w-5xl mx-auto">
-        <Blogs handleAddToBookmark={handleAddToBookmark} handleMarkAsRead={handleMarkAsRead}></Blogs>
+        <Blogs
+          handleAddToBookmark={handleAddToBookmark}
+          handleMarkAsRead={handleMarkAsRead}
+        ></Blogs>
         <Bookmarks bookmarks={bookmarks} readingTime={readingTime}></Bookmarks>
       </div>
     </>
